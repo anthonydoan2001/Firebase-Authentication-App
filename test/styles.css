@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex: 1; /* Fills remaining height */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    height: 100%; /* Full height for each box */
+}
+
+/* Different widths for each box */
+.box1 {
+    background-color: #e74c3c;
+    width: 3.5rem;
+}
+
+.box2 {
+    background-color: #3498db;
+    width: 15rem; 
+}
+
+.box3 {
+    background-color: #2ecc71;
+    flex-grow: 1; 
+}
